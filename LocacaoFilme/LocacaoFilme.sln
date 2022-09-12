@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.32602.291
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LocacaoFilme.Domain", "LocacaoFilme.Domain\LocacaoFilme.Domain.csproj", "{08FE2DB9-67E4-4C0A-BD52-DD8551996E69}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LocacaoFilme.API", "LocacaoFilme.API\LocacaoFilme.API.csproj", "{11FE04CC-A936-423F-9A6E-CBBF0C3A3B51}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LocacaoFilme.Application", "LocacaoFilme.Application\LocacaoFilme.Application.csproj", "{9AF2E311-CACF-4E9F-9C01-6D247F0797BD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LocacaoFilme.Infrastructure", "LocacaoFilme.Infrastructure\LocacaoFilme.Infrastructure.csproj", "{0E6DBA93-314F-4290-ABB7-81D925A02AC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocacaoFilme.CrossCutting", "LocacaoFilme.CrossCutting\LocacaoFilme.CrossCutting.csproj", "{E9D0E6FA-2EC7-4106-83A7-9CB2869313E0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{08FE2DB9-67E4-4C0A-BD52-DD8551996E69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08FE2DB9-67E4-4C0A-BD52-DD8551996E69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08FE2DB9-67E4-4C0A-BD52-DD8551996E69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08FE2DB9-67E4-4C0A-BD52-DD8551996E69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11FE04CC-A936-423F-9A6E-CBBF0C3A3B51}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11FE04CC-A936-423F-9A6E-CBBF0C3A3B51}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11FE04CC-A936-423F-9A6E-CBBF0C3A3B51}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11FE04CC-A936-423F-9A6E-CBBF0C3A3B51}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9AF2E311-CACF-4E9F-9C01-6D247F0797BD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9AF2E311-CACF-4E9F-9C01-6D247F0797BD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9AF2E311-CACF-4E9F-9C01-6D247F0797BD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9AF2E311-CACF-4E9F-9C01-6D247F0797BD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E6DBA93-314F-4290-ABB7-81D925A02AC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E6DBA93-314F-4290-ABB7-81D925A02AC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E6DBA93-314F-4290-ABB7-81D925A02AC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E6DBA93-314F-4290-ABB7-81D925A02AC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9D0E6FA-2EC7-4106-83A7-9CB2869313E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9D0E6FA-2EC7-4106-83A7-9CB2869313E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9D0E6FA-2EC7-4106-83A7-9CB2869313E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9D0E6FA-2EC7-4106-83A7-9CB2869313E0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8057FA03-6D30-4435-AD20-C3D1F457A6F4}
+	EndGlobalSection
+EndGlobal
