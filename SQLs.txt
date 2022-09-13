@@ -1,0 +1,44 @@
+/*Clientes em atraso na devolução.*/
+Select distinct C.*
+from  locacaofilmeapidb.clientes C
+ inner join locacaofilmeapidb.locacoes L
+  on C.Id = L.Id_cliente and DATE(L.DataDevolucao) < DATE(now())
+
+/*Filmes que nunca foram alugados.*/
+Select distinct F.*
+from  locacaofilmeapidb.filmes F
+where NOT EXISTS
+(Select *
+ from  locacaofilmeapidb.locacoes L
+ where F.Id = L.Id_filme)
+ 
+/*Cinco filmes mais alugados do último ano.*/
+Select F.Id, F.Titulo, count(*) Qtde
+from  locacaofilmeapidb.filmes F
+ inner join locacaofilmeapidb.locacoes L
+  on F.Id = L.Id_filme and YEAR(now()) = YEAR(L.DataLocacao)
+group by F.Id, F.Titulo
+order by QTDE desc
+limit 5
+
+/*Três filmes menos alugados da última semana.*/
+Select F.Id, F.Titulo, count(*) Qtde
+from  locacaofilmeapidb.filmes F
+ inner join locacaofilmeapidb.locacoes L
+  on F.Id = L.Id_filme and YEAR(now()) = YEAR(L.DataLocacao) and WEEKOFYEAR(now()) = WEEKOFYEAR(L.DataLocacao)
+group by F.Id, F.Titulo
+order by QTDE
+limit 3
+
+/*O segundo cliente que mais alugou filmes.*/
+SELECT * FROM (
+Select C.Id, C.Nome, count(*) Qtde
+from  locacaofilmeapidb.clientes C
+ inner join locacaofilmeapidb.locacoes L
+  on C.Id = L.Id_cliente
+group by C.Id, C.Nome
+order by count(*) desc
+limit 2
+) X
+order by 3
+limit 1
